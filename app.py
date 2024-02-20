@@ -59,6 +59,7 @@ def update_graph(selected_value):
     elif selected_value == 'TIME_OF_DAY':
         return dcc.Graph(id='pie-chart-time-of-day', figure=fig_pie)
 
+server = app.server
 # Run the app
 if __name__ == '__main__':
     app.run_server(debug=True)
